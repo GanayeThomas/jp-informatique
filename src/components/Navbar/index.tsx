@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -7,8 +6,8 @@ export default function Navbar() {
 
   return (
     <div>
-      {/* Navigation principale avec un style de fond et une mise en page flexible */}
-      <nav className="bg-[#333333] text-white p-3 flex items-center relative z-10">
+      {/* Navigation principale fixée en haut avec un style de fond et une mise en page flexible */}
+      <nav className="bg-[#333333] text-white p-3 flex items-center fixed top-0 w-full">
         {/* Bouton pour basculer la visibilité du menu */}
         <button onClick={() => setIsOpen(!isOpen)} className="z-20">
           {/* Icone de menu hamburger avec trois lignes horizontales */}
@@ -25,7 +24,7 @@ export default function Navbar() {
 
       {/* Conteneur pour les éléments du menu, avec animation de transition */}
       <div
-        className={`fixed duration-300 ${isOpen ? "opacity-100" : "opacity-0"}`}
+        className={`fixed top-0 mt-12 duration-300 ${isOpen ? "opacity-100" : "opacity-0"}`}
       >
         {/* Menu déroulant avec fond et transition */}
         <div
