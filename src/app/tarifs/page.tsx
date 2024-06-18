@@ -34,12 +34,19 @@ export default function Tarifs() {
               </tr>
             </thead>
             <tbody>
-              {data.map((row, index) =>
-              <tr key={index} className="bg-white">
-                <td className="border border-gray-200 px-4 py-2">{row.service}</td>
-                <td className="border border-gray-200 px-4 py-2">{row.panne}</td>
-                <td className="border border-gray-200 px-4 py-2">{row.prix}</td>
-              </tr>)}
+              {data.map((row, index) => (
+                <tr key={index} className="bg-white">
+                  <td className="border border-gray-200 px-4 py-2">
+                    {row.service}
+                  </td>
+                  <td className="border border-gray-200 px-4 py-2">
+                    {row.panne}
+                  </td>
+                  <td className="border border-gray-200 px-4 py-2">
+                    {row.prix}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
