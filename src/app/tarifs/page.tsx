@@ -4,19 +4,19 @@ export default function Tarifs() {
   const data = [
     { service: "Installation Windows", panne: "Installation OS", prix: "80€" },
     {
-      service: "Enlever produit malveillant",
-      panne: "Virus et autre logiciel malveillant",
+      service: "Suppresion produit malveillant",
+      panne: "Virus, Malxware et autre logiciel malveillant",
       prix: "70€",
     },
     {
       service: "Mise à jour du matériel",
       panne: "Mise à niveau composants PC",
-      prix: "90€",
+      prix: "50€",
     },
     {
       service: "Support technique général",
       panne: "Tout autre problème informatique",
-      prix: "60€",
+      prix: "Sur devis",
     },
     { service: "Diagnostic", panne: "Problème inconnu", prix: "30€" },
   ];

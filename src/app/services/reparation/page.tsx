@@ -8,15 +8,15 @@ export default function Reparation() {
         {/* Introduction */}
         <section className="text-center">
           <h1 className="text-4xl font-bold mb-4">Réparation Informatique</h1>
-          <p className="text-lg mb-8">Nous offrons des services de réparation informatique rapides et fiables pour tous types d'appareils. Que ce soit pour des problèmes matériels ou logiciels, notre équipe d'experts est là pour vous aider.</p>
+          <p className="text-lg mb-8">Nous offrons des services de réparation informatique rapides et fiables pour tous types d appareils. Que ce soit pour des problèmes matériels ou logiciels, notre équipe d experts est là pour vous aider.</p>
         </section>
 
         {/* Types de Réparations */}
         <section className="mb-8">
           <h2 className="text-3xl font-semibold mb-4">Types de Réparations Proposées</h2>
           <ul className="list-disc list-inside">
-            <li>Réparation d'ordinateurs portables et de bureau</li>
-            <li>Remplacement d'écran</li>
+            <li>Réparation d ordinateurs portables et de bureau</li>
+            <li>Remplacement d écran</li>
             <li>Réparation de carte mère</li>
             <li>Suppression de virus et logiciels malveillants</li>
             <li>Récupération de données</li>
@@ -51,12 +51,12 @@ export default function Reparation() {
             </thead>
             <tbody>
               <tr>
-                <td className="border px-4 py-2">Réparation d'écran</td>
+                <td className="border px-4 py-2">Réparation d écran</td>
                 <td className="border px-4 py-2">À partir de 50€</td>
               </tr>
               <tr>
-                <td className="border px-4 py-2">Suppression de virus</td>
-                <td className="border px-4 py-2">À partir de 30€</td>
+                <td className="border px-4 py-2">Suppression de virus et malwares</td>
+                <td className="border px-4 py-2">À partir de 70€</td>
               </tr>
             </tbody>
           </table>
@@ -79,7 +79,7 @@ export default function Reparation() {
           <h2 className="text-3xl font-semibold mb-4">FAQ</h2>
           <details className="mb-4">
             <summary className="cursor-pointer">Quels types de réparations proposez-vous ?</summary>
-            <p className="mt-2">Nous proposons une large gamme de services, y compris la réparation d'ordinateurs portables et de bureau, le remplacement d'écran, la récupération de données, et bien plus encore.</p>
+            <p className="mt-2">Nous proposons une large gamme de services, y compris la réparation d ordinateurs portables et de bureau, le remplacement d écran, la récupération de données, et bien plus encore.</p>
           </details>
           <details className="mb-4">
             <summary className="cursor-pointer">Combien de temps dure une réparation ?</summary>
@@ -87,7 +87,7 @@ export default function Reparation() {
           </details>
           <details className="mb-4">
             <summary className="cursor-pointer">Proposez-vous une garantie sur les réparations ?</summary>
-            <p className="mt-2">Oui, toutes nos réparations sont garanties pendant une période déterminée pour vous assurer tranquillité d'esprit.</p>
+            <p className="mt-2">Oui, toutes nos réparations sont garanties pendant une période déterminée pour vous assurer tranquillité d esprit.</p>
           </details>
         </section>
       </div>

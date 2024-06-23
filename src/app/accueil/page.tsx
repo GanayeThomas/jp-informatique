@@ -69,7 +69,7 @@ export default function Accueil() {
         <section className="py-10 bg-gray-100 w-full">
           <h2 className="text-4xl font-semibold text-center mb-6">Localisation et Horaires</h2>
           <p className="text-center mb-4">Nous sommes situés à Campremy.</p>
-          <p className="text-center mb-4">Horaires d'ouverture :</p>
+          <p className="text-center mb-4">Horaires d\ouverture :</p>
           <ul className="list-disc list-inside max-w-2xl mx-auto text-center">
             <li>Lundi a Vendredi : 9h00 - 18h00</li>
             <li>Samedi : 10h00 - 14h00</li>

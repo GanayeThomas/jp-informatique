@@ -40,18 +40,27 @@ const ContactForm = () => {
     if (Object.keys(formErrors).length === 0) {
       setIsSubmitting(true);
       emailjs
-        .sendForm("", "", e.target, "")
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID,
+          e.currentTarget,
+          process.env.NEXT_PUBLIC_KEY
+        )
         .then(() => {
           setIsSubmitting(false);
           e.target.reset();
-          setErrors({}); // Réinitialiser les erreurs
-          setSelectedOption(""); // Réinitialiser le menu déroulant
+          setErrors({});
+          setSelectedOption("");
           alert("Votre message a été envoyé avec succès!");
         })
-        .catch(() => {
-          alert("Une erreur s'est produite. Veuillez réessayer.");
+        .catch((error) => {
+          console.error('Erreur:', error);
+          alert("Une erreur s'est produite. Veuillez réessayer. " + error.text);
           setIsSubmitting(false);
         });
+        console.log("Service ID:", process.env.NEXT_PUBLIC_SERVICE_ID);
+        console.log("Template ID:", process.env.NEXT_PUBLIC_TEMPLATE_ID);
+        console.log("User Key:", process.env.NEXT_PUBLIC_KEY);
     }
   };
 
@@ -61,7 +70,7 @@ const ContactForm = () => {
       <div className="flex items-center justify-center min-h-screen">
         <form
           onSubmit={sendEmail}
-          className="flex flex-col gap-4 items-center mt-5"
+          className="flex flex-col gap-4 items-center mt-5 p-6 border border-gray-500 rounded-lg shadow-lg"
         >
           <div>
             <input
@@ -93,8 +102,8 @@ const ContactForm = () => {
               onChange={(e) => setSelectedOption(e.target.value)}
             >
               <option value="">Sélectionnez une option</option>
-              <option value="option1">Réparation</option>
-              <option value="option2">Installation</option>
+              <option value="Réparation">Réparation</option>
+              <option value="Installation">Installation</option>
             </select>
             {errors.dropdown_menu && (
               <p style={{ color: "red" }}>{errors.dropdown_menu}</p>
