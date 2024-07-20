@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'jp-informatique.fr',
   description: 'Installation dépannage informatique',
+  keywords: 'installation, dépannage, informatique, services IT, jp informatique, oise, somme',
 };
 
 export default function RootLayout({
