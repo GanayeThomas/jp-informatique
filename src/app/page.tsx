@@ -6,10 +6,10 @@ export default function Home() {
       <main>
         <Navbar />
       </main>
-      <div>
-        <h1>Bienvenue sur jp-informatique.fr</h1>
-        <p>
-          Nous offrons des services d'installation et de dépannage informatique.
+      <div className="flex flex-col items-center justify-center min-h-screen text-center">
+        <h1 className="text-4xl font-bold">Bienvenue sur jp-informatique.fr</h1>
+        <p className="mt-4 text-lg">
+          Nous offrons des services d&apos;installation et de dépannage informatique.
         </p>
       </div>
     </div>
